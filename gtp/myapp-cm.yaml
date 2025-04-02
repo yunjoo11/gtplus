@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: myapp-cm
+data:
+  MYSQL_IP: "localhost"
+  MYSQL_PORT: "3306"
+  MYSQL_DATABASE: "memberlist"
+  MYSQL_USER: "root"
+  MYSQL_PASSWORD: "root"
