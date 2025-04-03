@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: myapp-cm
 data:
-  MYSQL_IP: "localhost"
+  MYSQL_IP: "mysql"
   MYSQL_PORT: "3306"
   MYSQL_DATABASE: "memberlist"
   MYSQL_USER: "root"

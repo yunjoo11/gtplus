@@ -14,16 +14,9 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: yunjoo95/gtplus:20250403164645_10
+        image: yunjoo95/gtplus:20250403170036_11
         ports:
         - containerPort: 8080
         envFrom:
         - configMapRef:
             name: myapp-cm
-        env:
-        - name: SPRING_DATASOURCE_URL
-          value: "jdbc:mysql://mysql:3306/memberlist"
-        - name: SPRING_DATASOURCE_USERNAME
-          value: "root"
-        - name: SPRING_DATASOURCE_PASSWORD
-          value: "root"
