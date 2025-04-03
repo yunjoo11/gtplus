@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: yunjoo95/gtplus:20250403171714_14
+        image: yunjoo95/gtplus:20250403172118_15
         ports:
         - containerPort: 8080
         envFrom:
