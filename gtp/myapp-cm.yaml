@@ -3,8 +3,9 @@ kind: ConfigMap
 metadata:
   name: myapp-cm
 data:
-  MYSQL_IP: "mysql"
+  MYSQL_HOST: "mysql.default.svc.cluster.local"
   MYSQL_PORT: "3306"
   MYSQL_DATABASE: "memberlist"
   MYSQL_USER: "root"
   MYSQL_PASSWORD: "root"
+  JDBC_URL: "jdbc:mysql://mysql.default.svc.cluster.local:3306/memberlist?useSSL=false&serverTimezone=UTC"
