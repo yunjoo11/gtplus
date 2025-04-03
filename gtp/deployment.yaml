@@ -20,3 +20,10 @@ spec:
         envFrom:
         - configMapRef:
             name: myapp-cm
+        env:
+        - name: SPRING_DATASOURCE_URL
+          value: "jdbc:mysql://mysql:3306/memberlist"
+        - name: SPRING_DATASOURCE_USERNAME
+          value: "root"
+        - name: SPRING_DATASOURCE_PASSWORD
+          value: "root"
