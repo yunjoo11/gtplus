@@ -14,7 +14,7 @@ pipeline {
             steps {
                 git branch: 'test', url:'https://github.com/yunjoo11/gtplus.git'
 
-                dir('/home/k8s/gtplus'){
+                dir('/root/gtplus'){
                   
                 }
             }
@@ -50,7 +50,7 @@ pipeline {
                 GITHUB_ACCESS_TOKEN = credentials('github-access-token')
             }
             steps {
-                dir('/home/k8s/gtplus/gtp'){
+                dir('/root/gtplus/gtplus/gtp'){
                     sh '''
                         sed -i "s/gtplus:.*/gtplus:${strDockerTag}/g" deployment.yaml
                         git add deployment.yaml
